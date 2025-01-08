@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lennevx - My Plans</title>
+    <link rel="stylesheet" href="plans.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- For icons -->
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">Lennevx</div>
+            <ul>
+                <li><a href="l3.html">Home</a></li>
+                <li><a href="about1.html">About</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="#">My Plans</a></li>
+                <li><a href="#" class="btn">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- User Account Section -->
+    <section class="user-account">
+        <!-- User Picture and Details -->
+        <div class="user-details">
+            <img src="https://via.placeholder.com/150" alt="User Picture" class="user-picture">
+            <div class="info">
+                <h2>John Doe</h2>
+                <p><strong>Email:</strong> john.doe@example.com</p>
+                <p><strong>Phone:</strong> +1234567890</p>
+            </div>
+
+            <!-- Icons for Edit Account and Change Password -->
+            <div class="account-actions">
+                <a href="#"><i class="fas fa-user-edit"></i></a>
+                <a href="#"><i class="fas fa-lock"></i></a>
+            </div>
+        </div>
+
+        <!-- Deals Section moved under Account -->
+        <div class="deals">
+            <h2>Non-Event-Specific Deals</h2>
+            <div class="deal">
+                <p>50% Off on Photography Services!</p>
+                <div class="countdown" id="countdown-photography">
+                    <span id="days"></span> Days 
+                    <span id="hours"></span> Hours 
+                    <span id="minutes"></span> Minutes 
+                    <span id="seconds"></span> Seconds
+                </div>
+            </div>
+            <div class="deal">
+                <p>25% Off on Catering Packages!</p>
+                <div class="countdown" id="countdown-catering">
+                    <span id="days2"></span> Days 
+                    <span id="hours2"></span> Hours 
+                    <span id="minutes2"></span> Minutes 
+                    <span id="seconds2"></span> Seconds
+                </div>
+            </div>
+        </div>
+
+        <!-- Current Orders Section -->
+        <div class="current-orders">
+            <h2>Current Orders</h2>
+            <div class="order">
+                <h3>Birthday Event - October 2024</h3>
+                <p><strong>Services:</strong> Catering, Decorations</p>
+                <p><strong>Status:</strong> In Progress</p>
+                <button>View Details</button>
+            </div>
+        </div>
+
+        <!-- Past Orders Section -->
+        <div class="past-orders">
+            <h2>Past Orders</h2>
+            <div class="order">
+                <h3>Wedding Event - April 2024</h3>
+                <p><strong>Services:</strong> Catering, Photography, Lighting</p>
+                <p><strong>Status:</strong> Completed</p>
+            </div>
+            <div class="order">
+                <h3>Corporate Event - January 2024</h3>
+                <p><strong>Services:</strong> Security, Venue, Entertainment</p>
+                <p><strong>Status:</strong> Completed</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Lennevx. All rights reserved UwU.</p>
+    </footer>
+
+    <script>
+        // Countdown Timer for Photography Deal
+        var countdownDate = new Date("Oct 30, 2024 00:00:00").getTime();
+        var countdown = setInterval(function () {
+            var now = new Date().getTime();
+            var distance = countdownDate - now;
+            
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
+
+            if (distance < 0) {
+                clearInterval(countdown);
+                document.getElementById("countdown-photography").innerHTML = "Expired";
+            }
+        }, 1000);
+
+        // Countdown Timer for Catering Deal
+        var countdownDate2 = new Date("Nov 15, 2024 00:00:00").getTime();
+        var countdown2 = setInterval(function () {
+            var now = new Date().getTime();
+            var distance2 = countdownDate2 - now;
+            
+            var days2 = Math.floor(distance2 / (1000 * 60 * 60 * 24));
+            var hours2 = Math.floor((distance2 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes2 = Math.floor((distance2 % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds2 = Math.floor((distance2 % (1000 * 60)) / 1000);
+
+            document.getElementById("days2").innerHTML = days2;
+            document.getElementById("hours2").innerHTML = hours2;
+            document.getElementById("minutes2").innerHTML = minutes2;
+            document.getElementById("seconds2").innerHTML = seconds2;
+
+            if (distance2 < 0) {
+                clearInterval(countdown2);
+                document.getElementById("countdown-catering").innerHTML = "Expired";
+            }
+        }, 1000);
+    </script>
+
+</body>
+</html>

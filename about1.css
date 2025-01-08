@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar */
+header {
+    background-color: #2b2d42;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #804444;
+    border-radius: 5px;
+}
+
+nav ul li a.btn {
+    background-color: #ef233c;
+    color: #fff;
+    border-radius: 20px;
+}
+
+nav ul li a.btn:hover {
+    background-color: #d90429;
+}
+
+/* About Us Section */
+.about-us {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.about-us h2 {
+    font-size: 36px;
+    color: #2b2d42;
+    margin-bottom: 20px;
+}
+
+.about-us .handwriting {
+    font-family: 'Dancing Script', cursive;
+    font-size: 24px;
+    color: #ef233c;
+    margin-bottom: 20px;
+}
+
+/* Awards Section */
+.awards {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.awards h2 {
+    font-size: 36px;
+    color: #2b2d42;
+    margin-bottom: 30px;
+}
+
+.awards-grid {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.award {
+    margin: 20px;
+    text-align: center;
+}
+
+.award i {
+    font-size: 40px;
+    color: #ef233c;
+    margin-bottom: 10px;
+}
+
+.award h3 {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Gallery Section */
+.gallery {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 36px;
+    color: #2b2d42;
+    margin-bottom: 30px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.gallery-item img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    background-color: #2b2d42;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}

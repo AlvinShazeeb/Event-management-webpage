@@ -1,0 +1,191 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Sticky Navigation Bar */
+header {
+    background-color: #2b2d42;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #444;
+    border-radius: 5px;
+}
+
+nav ul li a.btn {
+    background-color: #ef233c;
+    color: #fff;
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+
+nav ul li a.btn:hover {
+    background-color: #d90429;
+}
+
+/* User Account Section */
+.user-account {
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.user-details {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.user-picture {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+}
+
+.info {
+    flex: 1;
+}
+
+.info h2 {
+    font-size: 32px;
+    color: #2b2d42;
+}
+
+.account-actions {
+    display: flex;
+    gap: 15px;
+}
+
+.account-actions a i {
+    font-size: 24px;
+    color: #ef233c;
+    cursor: pointer;
+}
+
+.account-actions a:hover i {
+    color: #d90429;
+}
+
+/* Deals Section */
+.deals {
+    margin-top: 30px;
+}
+
+.deal {
+    background-color: #e8e8e8;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.deal p {
+    font-size: 18px;
+    color: #2b2d42;
+    margin-bottom: 10px;
+}
+
+.countdown {
+    font-size: 16px;
+    color: #ef233c;
+    font-weight: bold;
+}
+
+/* Orders Section */
+.current-orders, .past-orders {
+    margin-bottom: 30px;
+}
+
+.current-orders h2, .past-orders h2 {
+    font-size: 28px;
+    color: #ef233c;
+    margin-bottom: 20px;
+}
+
+.order {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.order h3 {
+    font-size: 24px;
+    color: #2b2d42;
+    margin-bottom: 10px;
+}
+
+.order p {
+    font-size: 16px;
+}
+
+.order button {
+    background-color: #ef233c;
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.order button:hover {
+    background-color: #d90429;
+}
+
+/* Footer */
+footer {
+    background-color: #2b2d42;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}

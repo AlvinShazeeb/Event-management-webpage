@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar */
+header {
+    background-color: #2b2d42;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #444;
+    border-radius: 5px;
+}
+
+nav ul li a.btn {
+    background-color: #ef233c;
+    color: #fff;
+    border-radius: 20px;
+}
+
+nav ul li a.btn:hover {
+    background-color: #d90429;
+}
+
+/* Shop Intro Section */
+.shop-intro {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+    margin-bottom: 30px;
+}
+
+.shop-intro h2 {
+    font-size: 36px;
+    color: #2b2d42;
+    margin-bottom: 20px;
+}
+
+.shop-intro p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.shop-intro .catchphrase {
+    font-size: 22px;
+    color: #ef233c;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Shop Content Layout */
+.shop-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.shop-container {
+    display: flex;
+    width: 100%;
+}
+
+/* Left: Services Selection */
+.services-selection {
+    width: 40%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+
+.services-selection h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #2b2d42;
+}
+
+.service-option {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    font-size: 18px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.service-option i {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #ef233c;
+}
+
+.service-option.selected {
+    background-color: #ffabb5;
+    color: #fff;
+}
+
+.service-option:hover {
+    background-color: #920011;
+    color: #fff;
+}
+
+/* Right: Budget, Date, and Details Section */
+.details-section {
+    width: 60%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.details-section h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #2b2d42;
+}
+
+.filter-group {
+    margin-bottom: 20px;
+}
+
+.filter-group label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.filter-group input,
+.filter-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.filter-group input[type="range"] {
+    width: 100%;
+}
+
+.filter-group #budget-value {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ef233c;
+}
+
+/* Submit Button */
+.btn-submit {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #ef233c;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: #d90429;
+}
+
+/* Footer */
+footer {
+    background-color: #2b2d42;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}

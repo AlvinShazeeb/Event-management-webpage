@@ -1,0 +1,192 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body and Background */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #2b2d42;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #444;
+    border-radius: 5px;
+}
+
+nav ul li a.btn {
+    background-color: #ef233c;
+    color: #fff;
+    border-radius: 20px;
+}
+
+nav ul li a.btn:hover {
+    background-color: #d90429;
+}
+
+/* Hero Section with Event Showcase */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    background-color: rgba(43, 45, 66, 0.8);
+    padding: 0 50px;
+}
+
+.hero-left {
+    width: 50%;
+}
+
+.hero-left h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #fff8fa;
+}
+
+.hero-left p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #fffdea;
+}
+
+.cta-btn {
+    background-color: #ef233c;
+    padding: 10px 30px;
+    color: #fff;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cta-btn:hover {
+    background-color: #d90429;
+}
+
+.hero-right {
+    width: 50%;
+}
+
+.event-carousel {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 10px;
+}
+
+.hero-icon {
+    font-size: 5em;
+    color: #fff;
+}
+
+/* Glowing Order Now Button */
+.sticky-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff0015;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(255, 50, 50, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    animation: glowing 1.5s infinite alternate;
+}
+
+@keyframes glowing {
+    0% {
+        box-shadow: 0 0 5px #ff0015, 0 0 10px #ff0015, 0 0 15px #ff0015;
+    }
+    100% {
+        box-shadow: 0 0 20px #ff0015, 0 0 30px #ff0015, 0 0 40px #ff0015;
+    }
+}
+
+.sticky-button:hover {
+    background-color: #ff002b;
+    box-shadow: 0 4px 6px rgba(141, 42, 42, 0.2);
+    transform: scale(1.1);
+}
+
+/* Event Form Section */
+.event-form {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.event-form h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.event-form label {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.event-form input, .event-form textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.event-form input[type="submit"] {
+    background-color: #ef233c;
+    color: white;
+    cursor: pointer;
+}
+
+.event-form input[type="submit"]:hover {
+    background-color: #d90429;
+}

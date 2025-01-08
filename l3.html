@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lennevx - Your Event, Our Expertise by CSE6A</title>
+    <link rel="stylesheet" href="l3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- For open source icons -->
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">Lennevx</div>
+            <ul>
+                <li><a href="l3.html">Home</a></li>
+                <li><a href="about1.html">About</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="Plans.html">My Plans</a></li>
+
+                <li><a href="#" class="btn">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Event Showcase -->
+    <section class="hero">
+        <div class="hero-left">
+            <h1>Your Event, Our Expertise</h1>
+            <p>At Lennevx, we bring your dream events to life. From weddings to corporate events, we've got you covered.</p>
+            <a href="#" class="cta-btn">Explore Event Plans</a>
+        </div>
+        <div class="hero-right">
+            <div class="event-carousel">
+                <d class="gallery"> </d>
+                <!-- <img src="wed1.webp" alt="Wedding Event">
+                <img src="corp1.jpg" alt="Corporate Event">
+                <img src="bday1.jpg" alt="Birthday Event">
+                <img src="custom1.jpg" alt="Custom Party">
+                <img src="wed1.webp" alt="Wedding Event">
+                <img src="corp1.jpg" alt="Corporate Event">
+                <img src="bday1.jpg" alt="Birthday Event">
+                <img src="custom1.jpg" alt="Custom Party"> -->
+            </div>
+        </div>
+    </section>
+    <a href="#eventForm" class="sticky-button">Order Now</a>
+
+    <!-- Event Plans Section -->
+    <section class="plans">
+        <h2>Event Plans</h2>
+        <div class="plan-grid">
+            <div class="plan-item" style="background-image: url();">
+                <h3>Weddings</h3>
+                <p>Make your special day unforgettable with our tailored wedding plans.</p>
+            </div>
+            <div class="plan-item" style="background-image: url();">
+                <h3>Birthdays</h3>
+                <p>Celebrate your milestones with style, from small gatherings to grand parties.</p>
+            </div>
+            <div class="plan-item" style="background-image: url('');">
+                <h3>Corporate Events</h3>
+                <p>Professional event planning for conferences, meetings, and company parties.</p>
+            </div>
+            <div class="plan-item" style="background-image: url('');">
+                <h3>Festivals</h3>
+                <p>Plan large-scale festivals with our expert team, from music to food festivals.</p>
+            </div>
+            <div class="plan-item" style="background-image: url('');">
+                <h3>Workshops & Seminars</h3>
+                <p>Organize educational events and seminars with full logistical support.</p>
+            </div>
+            <div class="plan-item" style="background-image: url('');">
+                <h3>Custom Events</h3>
+                <p>Need something unique? We'll design a custom event plan just for you.</p>
+            </div>
+        </div>
+    </section>
+    <!--Form-->
+    <section id="eventForm"> 
+        <h2>Order NOW!</h2>
+            
+        <form id="eventForm" method="POST" action="process_form.php">
+            <label for="eventType">Event Type:</label>
+            <input type="text" id="eventType" name="eventType" required>
+        
+            <label for="budget">Budget:</label>
+            <input type="number" id="budget" name="budget" required>
+        
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="4"></textarea>
+        
+            <label for="contacts">Contacts:</label>
+            <input type="text" id="contacts" name="contacts" required>
+        
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="date">Event Date:</label>
+            <input type="date" id="date" name="date">
+        
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location">
+        
+            <label for="attendees">Expected Attendees:</label>
+            <input type="number" id="attendees" name="attendees">
+        
+            <label for="customRequest">Custom Requests:</label>
+            <textarea id="customRequest" name="customRequest" rows="4"></textarea>
+        
+            <button type="submit">Submit</button>
+        </form>
+        
+        
+    </section>
+    
+    <!-- Shop Section -->
+    <section class="shop">
+        <h2>Partnered Services</h2>
+        <div class="shop-item">
+            <i class="fas fa-utensils"></i>
+            <h3>Onno Catering</h3>
+            <p>Connect with our top-tier food providers to ensure delicious menus.</p>
+        </div>
+        <div class="shop-item">
+            <i class="fas fa-lightbulb"></i>
+            <h3>DA Lighting & Decor</h3>
+            <p>Stunning lighting and decor setups that doesn't match your event's theme lol.</p>
+        </div>
+        <div class="shop-item">
+            <i class="fas fa-camera"></i>
+            <h3>Sonkolon Photography</h3>
+            <p>Capture every moment with our unprofessional photographers.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Lennevx. All rights reserved DPI 6th sem.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lennevx - Shop</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <div class="logo">Lennevx</div>
+            <ul>
+                <li><a href="l3.html">Home</a></li>
+                <li><a href="about1.html">About</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="Plans.html">My Plans</a></li>
+                <li><a href="#" class="btn">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Shop Section -->
+    <section class="shop-intro">
+        <h2>Our Event Services, On Demand</h2>
+        <p>At Lennevx, we don’t just organize full events—we also offer our premium services separately. Need a photographer? A catering team? Or maybe decorations to make your event shine? We’ve got it all. Whatever you need, whenever you need it—Lennevx makes it happen!</p>
+        <p class="catchphrase">"Tailor your event, your way."</p>
+    </section>
+
+    <!-- Shop Filters Section -->
+    <section class="shop-content">
+        <div class="shop-container">
+
+            <!-- Left: Service Options -->
+            <div class="services-selection">
+                <h3>Select Services</h3>
+                <div class="service-option" data-service="photographers">
+                    <i class="fas fa-camera"></i> Photographers
+                </div>
+                <div class="service-option" data-service="catering">
+                    <i class="fas fa-utensils"></i> Catering
+                </div>
+                <div class="service-option" data-service="lighting">
+                    <i class="fas fa-lightbulb"></i> Lighting
+                </div>
+                <div class="service-option" data-service="decorations">
+                    <i class="fas fa-paint-roller"></i> Decorations
+                </div>
+                <div class="service-option" data-service="security">
+                    <i class="fas fa-shield-alt"></i> Security
+                </div>
+                <div class="service-option" data-service="security">
+                    <i class="fa-solid fa-music"></i> Entertainment
+                </div>
+                <div class="service-option" data-service="security">
+                    <i class="fa-solid fa-car"></i> Transport
+                </div>
+                <div class="service-option" data-service="security">
+                    <i class="fa-solid fa-building"></i> Venue
+                </div>
+            </div>
+
+            <!-- Right: Budget, Time, and Details -->
+            <div class="details-section">
+                <h3>Set Your Details</h3>
+
+                <!-- Budget Slider -->
+                <div class="filter-group">
+                    <label for="budget">Set Your Budget (Minimum: $500):</label>
+                    <input type="range" id="budget" name="budget" min="500" max="10000" step="100">
+                    <span id="budget-value">$500</span>
+                </div>
+
+                <!-- Date Range Selection -->
+                <div class="filter-group">
+                    <label for="date-range">Select Date Range:</label>
+                    <input type="date" id="start-date" name="start-date"> to 
+                    <input type="date" id="end-date" name="end-date">
+                </div>
+
+                <!-- Additional Details -->
+                <div class="filter-group">
+                    <label for="details">Additional Details:</label>
+                    <textarea id="details" name="details" rows="4" placeholder="Describe any specific requirements..."></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn-submit">Let's get going!</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Lennevx. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Budget slider functionality
+        const budgetSlider = document.getElementById('budget');
+        const budgetValue = document.getElementById('budget-value');
+        budgetSlider.oninput = function() {
+            budgetValue.textContent = '$' + this.value;
+        };
+
+        // Service selection functionality
+        const serviceOptions = document.querySelectorAll('.service-option');
+
+        serviceOptions.forEach(option => {
+            option.addEventListener('click', function() {
+                this.classList.toggle('selected');
+            });
+        });
+    </script>
+</body>
+</html>
